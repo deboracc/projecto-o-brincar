@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Paytone+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+:root {
+    --cor0: #AEECEF;
+    --cor1: #73a6cd;
+    --cor2: #228bdb96;
+    --cor3: #FFF275;
+    --cor4: #FF8C42;
+    --cor5: #C305FA;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Paytone One", sans-serif;
+    --fonte3: "Itim", cursive;
+
+} 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #AEECEF;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: #C305FA;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #FFF275;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.315);
+    font-weight: bold;
+}
+
+nav > a {
+    color: #73a6cd;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: #FF8C42;
+    color: #FFF275;
+}
+
+a.externa::after {
+    content: '🔗';
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+    text-align: justify;
+
+}
+
+section.normal {
+    background-color: #AEECEF;
+    color: black;
+}
+
+section.imagem {
+    background-color: #73a6cd;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.353);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    width: 400px;
+    background-color: #228bdb96;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/pexels-bulat-5686923.jpg');
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url('../imagens/pexels-yankrukov-8612914.jpg');
+    background-position: center center;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color:var(--cor3);
+    text-align: justify;
+    line-height: 3em;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    font-family: var(--fonte3);
+    margin: auto;
+    width: 90vh;
+}
+
+aside > h1 {
+    color: var(--cor5);
+    font-size: 3vw;
+    text-align: center;
+}
+
+aside > p {
+    font-size: 2vw;
+}
+
+p.canal {
+    text-align: center;
+}
+
+p.canal:hover {
+    background-color: var(--cor4);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    padding: 3px;
+
+}
+
+footer {
+    background-color: #C305FA;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
